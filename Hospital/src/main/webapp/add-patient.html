@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Registration</title>
+</head>
+<body>
+  <form action="/Hospital/Register" method="post">
+    <h1 align="center">Patient Registration</h1>
+    <table align="center" bgcolor="skyblue">
+      <tbody>
+        <tr>
+          <td>PATIENT_ID:</td>
+          <td><input type="number" name="id" required /></td>
+        </tr>
+        <tr>
+          <td>Full Name:</td>
+          <td><input type="text" name="fullname" required /></td>
+        </tr>
+        <tr>
+          <td>Date of Birth:</td>
+          <td><input type="date" name="dateofbirth" required /></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" value="male" required /> Male
+            <input type="radio" name="gender" value="female" /> Female
+            <input type="radio" name="gender" value="other" /> Other
+          </td>
+        </tr>
+        <tr>
+          <td>Age:</td>
+          <td><input type="number" name="Age" min="0" required /></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="Email" required /></td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td><textarea name="Address" rows="3" cols="30" required></textarea></td>
+        </tr>
+        <tr>
+          <td>Marital Status:</td>
+          <td>
+            <select name="MaritalStatus" required>
+              <option value="">--Select--</option>
+              <option value="single">Single</option>
+              <option value="married">Married</option>
+              <option value="divorced">Divorced</option>
+              <option value="widowed">Widowed</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Phone:</td>
+          <td><input type="tel" name="Phone" pattern="[0-9]{10}" maxlength="10" required /></td>
+        </tr>
+        <tr>
+          <td>Emergency Contact:</td>
+          <td><input type="tel" name="EmergencyContact" pattern="[0-9]{10}" maxlength="10" required /></td>
+        </tr>
+        <tr>
+          <td>Reason for Visit:</td>
+          <td><textarea name="Reasonforvisit" rows="3" cols="30" required></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Register" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</body>
+</html>
